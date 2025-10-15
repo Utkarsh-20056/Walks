@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walks | Login / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgrmE8ATB4cadRwpH1CPGd3m7Rwmt0UImkEZIMbYPWgrCTH8ALdheJCuyvD3qO50hpHLk_Vrpnv5QQ04gouiTP8oN4-HN1D4wcRhdyl5OT7AKQcqpOtG4uPvD9mFawyRIvbaGPixiDO3bYtGN4o9VGPnQy-v4VmVCJdWJrpZjI5CwIjAXek3UbiJi5b4YaU" alt="Walks App Logo" class="logo-img">
+                <span class="logo-text">Walks</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="planner.html" class="nav-link">Plan Trip</a></li>
+                <li class="nav-item"><a href="discounts.html" class="nav-link">Discounts</a></li>
+                <li class="nav-item"><a href="guides.html" class="nav-link">Guides</a></li>
+                <li class="nav-item"><a href="discounts.html" class="nav-link">Local Vendors</a></li>
+                <li class="nav-item"><a href="community.html" class="nav-link">Community</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="auth.html" class="btn btn-secondary active">Login</a>
+                <a href="auth.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-page">
+            <div class="auth-card">
+                <h1 class="section-title">Welcome Back, Traveler!</h1>
+                <p class="subtitle">Log in to save your trip plans and access student discounts.</p>
+                
+                <!-- Social Login Options -->
+                <div class="social-login">
+                    <button class="btn btn-social google">
+                        <span class="icon">G</span> Continue with Google
+                    </button>
+                    <button class="btn btn-social phone">
+                        <span class="icon">📞</span> Use Phone Number
+                    </button>
+                </div>
+                
+                <div class="divider">OR</div>
+
+                <!-- Email/Password Form -->
+                <form class="auth-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                    <button type="submit" class="btn btn-primary submit-btn">Log In</button>
+                </form>
+
+                <p class="switch-mode">
+                    Don't have an account? <a href="#">Sign Up Now</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Walks</h4>
+                <p>The story of Tanvi, Prachi, and Anjali. Created by students, for students, to make travel accessible and fun.</p>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="planner.html">Plan Trip</a></li>
+                    <li><a href="discounts.html">Discounts</a></li>
+                    <li><a href="guides.html">Local Guides</a></li>
+                    <li><a href="community.html">Community Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Chat with Us</a></li>
+                    <li><a href="mailto:support@walks.app">support@walks.app</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Walks. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

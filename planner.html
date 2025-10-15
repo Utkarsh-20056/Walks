@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walks | Plan Your Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgrmE8ATB4cadRwpH1CPGd3m7Rwmt0UImkEZIMbYPWgrCTH8ALdheJCuyvD3qO50hpHLk_Vrpnv5QQ04gouiTP8oN4-HN1D4wcRhdyl5OT7AKQcqpOtG4uPvD9mFawyRIvbaGPixiDO3bYtGN4o9VGPnQy-v4VmVCJdWJrpZjI5CwIjAXek3UbiJi5b4YaU" alt="Walks App Logo" class="logo-img">
+                <span class="logo-text">Walks</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="planner.html" class="nav-link active">Plan Trip</a></li>
+                <li class="nav-item"><a href="discounts.html" class="nav-link">Discounts</a></li>
+                <li class="nav-item"><a href="#guides" class="nav-link">Guides</a></li>
+                <li class="nav-item"><a href="discounts.html" class="nav-link">Local Vendors</a></li>
+                <li class="nav-item"><a href="community.html" class="nav-link">Community</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="#login" class="btn btn-secondary">Login</a>
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="trip-planner-tool">
+            <div class="container">
+                <h1 class="section-title">Let's Plan Your Next Adventure</h1>
+                <form class="planner-form">
+                    <div class="form-step">
+                        <h3>Step 1: Where to?</h3>
+                        <input type="text" placeholder="Enter City or Destination (e.g., Goa, Rishikesh)">
+                    </div>
+                    <div class="form-step">
+                        <h3>Step 2: Trip Details</h3>
+                        <input type="number" placeholder="Number of People">
+                        <input type="text" placeholder="Approx. Budget (e.g., ₹5000)">
+                    </div>
+                    <div class="form-step">
+                        <h3>Step 3: What's the Vibe?</h3>
+                        <select>
+                            <option>Select Trip Type</option>
+                            <option>Quick Cafe/Local Outing</option>
+                            <option>Weekend Trek/Hike</option>
+                            <option>Long Destination Trip</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Generate My Itinerary</button>
+                </form>
+                <div class="results-section">
+                    <h2>Your Custom Itinerary will appear here!</h2>
+                    <p>Click "Generate My Itinerary" to get budget estimates, routes, and local highlights.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Walks</h4>
+                <p>The story of Tanvi, Prachi, and Anjali. Created by students, for students, to make travel accessible and fun.</p>
+                <a href="#">About Us</a>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="planner.html">Plan Trip</a></li>
+                    <li><a href="discounts.html">Discounts</a></li>
+                    <li><a href="#guides">Local Guides</a></li>
+                    <li><a href="community.html">Community Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Chat with Us</a></li>
+                    <li><a href="mailto:support@walks.app">support@walks.app</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Walks. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
