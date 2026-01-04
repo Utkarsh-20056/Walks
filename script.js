@@ -193,3 +193,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// ===================================
+// 6. SIGN UP FORM VALIDATION (for signup.html)
+// ===================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const signupForm = document.querySelector('.signup-form');
+    if (signupForm) {
+        signupForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const messageElement = document.getElementById('signup-message');
+            
+            if (password !== confirmPassword) {
+                messageElement.textContent = "❌ Passwords do not match!";
+                messageElement.style.color = "red";
+                return;
+            }
+            
+            // Simulation of successful signup
+            messageElement.textContent = "✅ Account Created Successfully! Redirecting to Login...";
+            messageElement.style.color = "green";
+            
+            setTimeout(() => {
+                window.location.href = 'auth.html';
+            }, 2000);
+        });
+    }
+});

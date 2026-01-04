@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walks | Plan Your Trip</title>
+    <title>Walks | Create Account</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
             </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="planner.html" class="nav-link active">Plan Trip</a></li>
+                <li class="nav-item"><a href="planner.html" class="nav-link">Plan Trip</a></li>
                 <li class="nav-item"><a href="discounts.html" class="nav-link">Discounts</a></li>
                 <li class="nav-item"><a href="guides.html" class="nav-link">Guides</a></li>
                 <li class="nav-item"><a href="discounts.html" class="nav-link">Local Vendors</a></li>
@@ -27,7 +27,7 @@
             </ul>
             <div class="nav-auth">
                 <a href="auth.html" class="btn btn-secondary">Login</a>
-                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <a href="signup.html" class="btn btn-primary active">Sign Up</a>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -38,34 +38,37 @@
     </header>
 
     <main>
-        <section class="trip-planner-tool">
-            <div class="container">
-                <h1 class="section-title">Let's Plan Your Next Adventure</h1>
-                <form class="planner-form">
-                    <div class="form-step">
-                        <h3>Step 1: Where to?</h3>
-                        <input type="text" placeholder="Enter City or Destination (e.g., Goa, Rishikesh)">
-                    </div>
-                    <div class="form-step">
-                        <h3>Step 2: Trip Details</h3>
-                        <input type="number" placeholder="Number of People">
-                        <input type="text" placeholder="Approx. Budget (e.g., ₹5000)">
-                    </div>
-                    <div class="form-step">
-                        <h3>Step 3: What's the Vibe?</h3>
-                        <select>
-                            <option>Select Trip Type</option>
-                            <option>Quick Cafe/Local Outing</option>
-                            <option>Weekend Trek/Hike</option>
-                            <option>Long Destination Trip</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Generate My Itinerary</button>
-                </form>
-                <div class="results-section">
-                    <h2>Your Custom Itinerary will appear here!</h2>
-                    <p>Click "Generate My Itinerary" to get budget estimates, routes, and local highlights.</p>
+        <section class="auth-page">
+            <div class="auth-card">
+                <h1 class="section-title">Join the Adventure!</h1>
+                <p class="subtitle">Create an account to start planning trips, saving deals, and exploring with friends.</p>
+                
+                <!-- Social Login Options -->
+                <div class="social-login">
+                    <button class="btn btn-social google">
+                        <span class="icon">G</span> Sign up with Google
+                    </button>
+                    <button class="btn btn-social phone">
+                        <span class="icon">📞</span> Use Phone Number
+                    </button>
                 </div>
+                
+                <div class="divider">OR</div>
+
+                <!-- Sign Up Form -->
+                <form class="auth-form signup-form">
+                    <input type="text" id="fullname" placeholder="Full Name" required class="form-input">
+                    <input type="email" id="email" placeholder="Email Address" required class="form-input">
+                    <input type="password" id="password" placeholder="Password" required class="form-input">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required class="form-input">
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">Create Account</button>
+                </form>
+
+                <p class="switch-mode">
+                    Already have an account? <a href="auth.html">Log In</a>
+                </p>
+                <div id="signup-message" style="margin-top: 15px; color: red;"></div>
             </div>
         </section>
     </main>
