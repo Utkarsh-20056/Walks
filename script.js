@@ -86,15 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const destinationInput = document.getElementById('destination');
             const peopleInput = document.getElementById('people');
             const budgetInput = document.getElementById('budget');
+            const tripTypeInput = document.getElementById('trip-type');
 
-            if (!destinationInput || !peopleInput || !budgetInput) {
-                console.error("Planner form inputs not found. Check if IDs (destination, people, budget) are correct in planner.html.");
+            if (!destinationInput || !peopleInput || !budgetInput || !tripTypeInput) {
+                console.error("Planner form inputs not found.");
                 return;
             }
             
             const destination = destinationInput.value;
             const people = parseInt(peopleInput.value);
             const budget = parseFloat(budgetInput.value);
+            const tripType = tripTypeInput.value;
 
             if (!destination || isNaN(people) || people <= 0 || isNaN(budget) || budget <= 0) {
                 resultsSection.innerHTML = `
@@ -107,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const perPersonBudget = (budget / people).toFixed(2);
             let itinerarySuggestion = "Finding the best deals and routes for you!";
             
-            if (budget < 1000) {
+            if (tripType === "Quick Cafe/Local Outing" || budget < 1000) {
                 itinerarySuggestion = "Focus on a **local outing** (Cafe/Movie/Quick Bite). Remember to check our <a href='discounts.html'>Local Vendor Discounts</a> for amazing deals in this area!";
-            } else if (budget < 5000) {
+            } else if (tripType === "Weekend Trek/Hike" || budget < 5000) {
                 itinerarySuggestion = "Perfect for a **short weekend trip**. We'll suggest budget transport options and student-friendly stays.";
             } else {
                 itinerarySuggestion = "Ideal for a **full itinerary trip/trek**. We'll include suggested travel routes, trusted local guides, and specialty highlights.";
@@ -118,10 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsSection.innerHTML = `
                 <h2>Your Trip Plan is Ready!</h2>
                 <p><strong>Destination:</strong> ${destination}</p>
+                <p><strong>Type:</strong> ${tripType || 'Custom Adventure'}</p>
                 <p><strong>Group Size:</strong> ${people} people</p>
                 <p><strong>Total Budget:</strong> ₹${budget.toFixed(2)} (approx. ₹${perPersonBudget} per person)</p>
                 <hr style="margin: 15px 0; border-top: 1px solid #ccc;">
                 <p><strong>Itinerary Focus:</strong> ${itinerarySuggestion}</p>
+                <button class="btn btn-primary" style="margin-top: 20px;">Save This Plan</button>
             `;
         });
     }

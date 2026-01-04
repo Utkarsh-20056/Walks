@@ -44,20 +44,20 @@
                 <form class="planner-form">
                     <div class="form-step">
                         <h3>Step 1: Where to?</h3>
-                        <input type="text" placeholder="Enter City or Destination (e.g., Goa, Rishikesh)">
+                        <input type="text" id="destination" placeholder="Enter City or Destination (e.g., Goa, Rishikesh)">
                     </div>
                     <div class="form-step">
                         <h3>Step 2: Trip Details</h3>
-                        <input type="number" placeholder="Number of People">
-                        <input type="text" placeholder="Approx. Budget (e.g., ₹5000)">
+                        <input type="number" id="people" placeholder="Number of People">
+                        <input type="text" id="budget" placeholder="Approx. Budget (e.g., ₹5000)">
                     </div>
                     <div class="form-step">
                         <h3>Step 3: What's the Vibe?</h3>
-                        <select>
-                            <option>Select Trip Type</option>
-                            <option>Quick Cafe/Local Outing</option>
-                            <option>Weekend Trek/Hike</option>
-                            <option>Long Destination Trip</option>
+                        <select id="trip-type">
+                            <option value="">Select Trip Type</option>
+                            <option value="Quick Cafe/Local Outing">Quick Cafe/Local Outing</option>
+                            <option value="Weekend Trek/Hike">Weekend Trek/Hike</option>
+                            <option value="Long Destination Trip">Long Destination Trip</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Generate My Itinerary</button>
