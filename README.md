@@ -21,8 +21,8 @@ A modern and responsive travel website designed to inspire users to explore beau
 
 ## 🛠️ Built With
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * JavaScript
 
 ---
